@@ -7,8 +7,6 @@ public class Exo6 {
     public int [] greaterThanTen(int [] tab) {
 
         ArrayList<Integer> newtab= new ArrayList<Integer>();
-
-
        for(int i = 0;i<tab.length;i++) {
         if(tab[i]> 10) {
             newtab.add(tab[i]);
