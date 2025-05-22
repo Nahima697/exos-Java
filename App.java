@@ -2,7 +2,6 @@
 
 import Exo1.Exo1;
 import Exo2.Exo2;
-import Exo3.Exo3;
 import Exo4.Exo4;
 import Exo5.Exo5;
 import Exo6.Exo6;
@@ -23,9 +22,6 @@ public class App {
         System.out.println("Multiplication :  "+ exo2.multiply(5,15));
         System.out.println("Division :  "+ exo2.divide(15,5));
 
-        Exo3 exo3 = new Exo3();
-
-        System.out.println("Nombre de lettres : " + exo3.countVoyel("Java"));
 
         Exo4 exo4 = new Exo4();
 
