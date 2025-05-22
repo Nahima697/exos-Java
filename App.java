@@ -6,6 +6,7 @@ import Exo3.Exo3;
 import Exo4.Exo4;
 import Exo5.Exo5;
 import Exo6.Exo6;
+import Exo7.Exo7;
 
 public class App {
     public static void main(String[] args) {
@@ -37,15 +38,19 @@ public class App {
         Exo5 exo5 = new Exo5();
         System.out.println(exo5.upsideDown("bonjour"));
 
-        Exo6 exo = new Exo6(); 
+        Exo6 exo6 = new Exo6(); 
         
         int[] tableau = {5, 12, 8, 15, 3, 22, 9};
-        int[] resultats = exo.greaterThanTen(tableau);
-        
+        int[] resultats = exo6.greaterThanTen(tableau);
+
         System.out.print("Valeurs > 10 : ");
         for (int valeur : resultats) {
             System.out.print(valeur + " ");
         }
+
+        Exo7 exo7 = new Exo7(); 
+
+        System.out.println("Triangle d'étoile: " + exo7.triangleStar());
       
     }
 }
