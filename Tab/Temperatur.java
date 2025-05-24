@@ -70,8 +70,10 @@ public class Temperatur {
             System.out.print(jours[i] + " : ");
             tempTab[i] = scanner.nextDouble();
         }
-    
+        scanner.close();
         return tempTab;
+
+        
     }
 
     public static double[] convertToFahrenheit(double [] celcius) {
@@ -82,9 +84,7 @@ public class Temperatur {
             fahrenheit[index]= celcius[i]* 9/5 + 32;
             index++;        
          }
-
          return fahrenheit;
-
     }
 
     

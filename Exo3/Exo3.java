@@ -16,6 +16,7 @@ public class Exo3 {
         System.out.print("Mot : ");
         String mot = scanner.nextLine();
         System.out.println("Voyelles : " + countVoyel(mot));
+        scanner.close();
     }
     
     }
