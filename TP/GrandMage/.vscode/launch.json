@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch GrandMage",
+      "request": "launch",
+      "mainClass": "TP.GrandMage.GrandMage",
+      "vmArgs": "-cp .;lib/javax.json-1.1.4.jar", 
+    }
+  ]
+}

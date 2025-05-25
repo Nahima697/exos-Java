@@ -72,8 +72,6 @@ public class Temperatur {
         }
         scanner.close();
         return tempTab;
-
-        
     }
 
     public static double[] convertToFahrenheit(double [] celcius) {
