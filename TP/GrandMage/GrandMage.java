@@ -22,13 +22,6 @@ import javax.json.JsonArray;
 import javax.json.JsonValue;
 
 
-
-
-
-    //méthode construire des questions aléatoirs Api
-    //méthode stocker des points (add)
-    //méthode sauvegarder un scrore dans un fichier
-    //Manipuler des chaînes, listes, maps, fichiers, dates, exceptions
 public class GrandMage {
 
 // Méthode pour construire l'URL de l'API
