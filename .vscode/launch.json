@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GrandMage",
+            "request": "launch",
+            "mainClass": "TP.GrandMage.GrandMage",
+            "projectName": "JavaSE_ef4c2e34"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -61,15 +68,15 @@
         },
         {
             "type": "java",
-            "name": "GrandMage",
+            "name": "Run GrandMage",
             "request": "launch",
             "mainClass": "TP.GrandMage.GrandMage",
-            "projectName": "JavaSE_ef4c2e34",
+            "projectName": "JavaSE",
             "classPaths": [
-              "out",
-              "lib/javax.json-1.1.4.jar"
+                "out",
+                "lib/javax.json-1.1.4.jar"
             ]
-          },
+        },
         {
             "type": "java",
             "name": "Temperatur",
