@@ -84,10 +84,10 @@ public boolean compareResponseToAnswer(String expectedAnswer, String userAnswer)
     }
 }
 
-public static void writeScore(List<String> content) {
+public static void writeScore(List<String> content,String name) {
     try {
         Files.write(Paths.get("scores.txt"), content, StandardOpenOption.CREATE, StandardOpenOption.APPEND);
-        System.out.println("Votre score a été sauvegardé dans scores.txt");
+        System.out.println("Sauvegarde de score de "+name+"Votre score a été sauvegardé dans scores.txt");
     } catch (IOException e) {
         System.out.println("Erreur : " + e.getMessage());
         e.printStackTrace();
@@ -111,13 +111,14 @@ public void generateQuiz() {
     difficulties.add("difficile");
 
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Bienvenue dans notre quiz !");
+    System.out.println("Bienvenue dans notre quiz ! Quel est votre nom?");
+    String name = scanner.nextLine();
     
-    System.out.print("Choisissez le nombre de questions : ");
+    System.out.print("Choisissez le nombre de questions : \n");
     int number = scanner.nextInt();
     scanner.nextLine(); 
 
-    System.out.print("Choisissez la catégorie parmis les suivantes : ");
+    System.out.print("Choisissez la catégorie parmis les suivantes :\n ");
     for (int i = 0; i < categories.size(); i++) {
         System.out.println((i + 1) + ". " + categories.get(i));
     }
@@ -152,8 +153,9 @@ for (Map.Entry<String, String> entry : quizzes.entrySet()) {
 }
 List<String> lines = new ArrayList<>();
 lines.add("Score :  " + points);
+lines.add(name);
 lines.add("Date: "+  LocalDate.now());
-writeScore(lines);
+writeScore(lines,name);
 System.out.println("Quiz terminé ! Vous avez obtenu " + points + " point(s) sur " + quizzes.size() + ".");
 scanner.close();
 }
